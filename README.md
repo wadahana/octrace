@@ -2,10 +2,19 @@
 做octrace的目的，一是想做Obj-C的函数覆盖测试，另外也是想有个比较方便的工具，做APP逆向时，比较容易找到关注的Hook点。
 
 ##0x02 原理
-Obj-C runtime 大家都很清楚，函数调用都是通过objc_msgSend来实现，第一个参数是id, 第二个参数是selector，剩下的参数就是实际selector的传入参数。
+Obj-C runtime 中函数调用都是通过objc_msgSend来实现，第一个参数是id, 第二个参数是selector，剩下的参数就是实际selector的传入参数。
+
+>origin\_objc\_msgSend: 原始objc_msgSend函数
+>
+>new\_objc\_msgSend: 劫持后的objc_msgSend函数
+>
+>\_\_hook\_callback\_pre: 在origin\_objc\_msgSend前调用
+>
+>\_\_hook\_callback\_post: 在origin\_objc\_msgSend后调用
+
 
 hook了objc\_msgSend后，如果仅仅要打印下class和selector，则只要保存好传参寄存器，调用\_\_hook\_callback\_pre进行打印，返回后还原传参的寄存器，再调用origin\_objc\_msgSend。
-但是仅仅这样的话，无法还原出函数调用的树形关系，我们需要在origin\_objc_msgSend前后都需要对插入自己的代码，对函数调用深度进行标记。
+但是仅仅这样的话，无法还原出函数调用的树形关系，我们需要在origin\_objc\_msgSend前后都需要对插入自己的代码，对函数调用深度进行标记。
 在call origin\_objc\_msgSend之后，再做一次函数调用，涉及到几个问题：
 
 1. origin\_objc_msgSend 跳转/返回方式(b/bl)
