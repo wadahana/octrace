@@ -125,6 +125,7 @@ void  __hook_callback_post(id self, SEL op) {
     return;
 }
 
+
 #if  __LP64__
 __attribute__((naked))
 static id new_objc_msgSend(id self, SEL op) {
@@ -133,7 +134,7 @@ static id new_objc_msgSend(id self, SEL op) {
     __volatile__ (
                   "stp fp, lr, [sp, #-16]!;\n"
                   "mov fp, sp;\n"
-                  
+
                   // store x10-x13,
                   "sub    sp, sp, #(8*16+14*8);\n"
                   "stp    x0, x1, [sp, #(0*8)];\n"
@@ -169,37 +170,21 @@ static id new_objc_msgSend(id self, SEL op) {
                   "Lskip_copy:\n"
                   
                   "adr lr, Llocal_return;\n"
-                  "stp fp, lr, [sp, #-16]!;\n"
-                  "mov fp, sp;\n"
-                  
-                  // store x0-x8 and q0-q7 before hook_callback_pre
-                  "sub    sp, sp, #(16*8 + 8*10);\n"
-                  "stp    q0, q1, [sp, #(0*16)];\n"
-                  "stp    q2, q3, [sp, #(2*16)];\n"
-                  "stp    q4, q5, [sp, #(4*16)];\n"
-                  "stp    q6, q7, [sp, #(6*16)];\n"
-                  "stp    x0, x1, [sp, #(8*16+0*8)];\n"
-                  "stp    x2, x3, [sp, #(8*16+2*8)];\n"
-                  "stp    x4, x5, [sp, #(8*16+4*8)];\n"
-                  "stp    x6, x7, [sp, #(8*16+6*8)];\n"
-                  "str    x8,     [sp, #(8*16+8*8)];\n"
                   
                   "BL ___hook_callback_pre;\n"
                   "mov x9, x0;\n"
                   
-                  // restore all the parameter registers to the initial state.
-                  "ldp    q0, q1, [sp, #(0*16)];\n"
-                  "ldp    q2, q3, [sp, #(2*16)];\n"
-                  "ldp    q4, q5, [sp, #(4*16)];\n"
-                  "ldp    q6, q7, [sp, #(6*16)];\n"
-                  "ldp    x0, x1, [sp, #(8*16+0*8)];\n"
-                  "ldp    x2, x3, [sp, #(8*16+2*8)];\n"
-                  "ldp    x4, x5, [sp, #(8*16+4*8)];\n"
-                  "ldp    x6, x7, [sp, #(8*16+6*8)];\n"
-                  "ldr    x8,     [sp, #(8*16+8*8)];\n"
+                  "add    x10, fp, #16;\n"
+                  "ldp    x0, x1, [x10, #(0*8)];\n"
+                  "ldp    x2, x3, [x10, #(2*8)];\n"
+                  "ldp    x4, x5, [x10, #(4*8)];\n"
+                  "ldp    x6, x7, [x10, #(6*8)];\n"
+                  "ldr    x8,     [x10, #(8*8)];\n"
+                  "ldp    q0, q1, [x10, #(14*8+0*16)];\n"
+                  "ldp    q2, q3, [x10, #(14*8+2*16)];\n"
+                  "ldp    q4, q5, [x10, #(14*8+4*16)];\n"
+                  "ldp    q6, q7, [x10, #(14*8+6*16)];\n"
                   
-                  "mov    sp, fp;\n"
-                  "ldp    fp, lr, [sp], #16;\n"
                   "BLR    x9;\n"
                   "Llocal_return:\n"
                   
