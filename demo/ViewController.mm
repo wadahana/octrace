@@ -6,7 +6,10 @@
 //  Copyright © 2017 ChinaNetCenter. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 #import "ViewController.h"
+#import "OCTraceTest.h"
 
 @interface ViewController ()
 
@@ -23,6 +26,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+-(IBAction)onButton:(UIButton *)button {
+    self.label.text = @"hello!";
+    [[OCTraceTest shareInstance] test];
 }
 
 

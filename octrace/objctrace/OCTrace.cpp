@@ -43,7 +43,7 @@
 static OCTraceLogger * s_logger = NULL;
 static const char * s_skip_image_names[] = {
     "WeChat",
-    "DYZB",
+    "demo",
     "IPAPatch",
     NULL,
 };

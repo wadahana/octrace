@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "OCTrace.h"
-#import "OCTraceLocalLogger.h"
+
+#include "OCTrace.h"
+#include "OCTraceLocalLogger.h"
 
 @interface AppDelegate ()
 

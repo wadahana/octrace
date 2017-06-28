@@ -127,28 +127,10 @@ public:
     
     OCTraceLoggerCallee makeCallee(intptr_t obj_ptr, intptr_t op_ptr);
     
-    const char * getClassName(intptr_t obj_ptr) {
-        const char* class_name = (char*) object_getClassName((id)obj_ptr);
-        if (!class_name) {
-            class_name = "null";
-        }
-        return class_name;
-    };
-    const char * getSelectorName(intptr_t op_ptr) {
-        const char* op_name = (const char*) op_ptr;
-        op_name = !op_name ? "null" : op_name;
-        return op_name;
-    };
-    __uint64_t getCurrentThreadID() {
-        __uint64_t threadId = 0;
-        if (pthread_threadid_np(0, &threadId)) {
-            threadId = pthread_mach_thread_np(pthread_self());
-        }
-        return threadId;
-    };
-    __uint64_t getProcessID() {
-        return (__uint64_t)getpid();
-    };
+    const char * getClassName(intptr_t obj_ptr);
+    const char * getSelectorName(intptr_t op_ptr) ;
+    __uint64_t getCurrentThreadID();
+    __uint64_t getProcessID() ;
     
 protected:
     

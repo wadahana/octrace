@@ -16,7 +16,25 @@
 		1C1B0F5A1EFCF721003BE2D9 /* OCTraceUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B0F521EFCF721003BE2D9 /* OCTraceUtils.cpp */; };
 		1C1B0F5B1EFCF81A003BE2D9 /* OCTrace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1B0F491EFCF721003BE2D9 /* OCTrace.h */; };
 		1C1B0F5C1EFCF81A003BE2D9 /* OCTraceLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1B0F4F1EFCF721003BE2D9 /* OCTraceLogger.h */; };
+		1CC029181F02B7E8008B5063 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC029171F02B7E8008B5063 /* main.m */; };
+		1CC0291B1F02B7E8008B5063 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0291A1F02B7E8008B5063 /* AppDelegate.mm */; };
+		1CC0291E1F02B7E8008B5063 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0291D1F02B7E8008B5063 /* ViewController.mm */; };
+		1CC029211F02B7E8008B5063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC0291F1F02B7E8008B5063 /* Main.storyboard */; };
+		1CC029231F02B7E8008B5063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CC029221F02B7E8008B5063 /* Assets.xcassets */; };
+		1CC029261F02B7E8008B5063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC029241F02B7E8008B5063 /* LaunchScreen.storyboard */; };
+		1CC0293B1F02B7F9008B5063 /* liboctrace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1B0F371EFCBBA1003BE2D9 /* liboctrace.a */; };
+		1CC029441F034863008B5063 /* OCTraceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC029431F034863008B5063 /* OCTraceTest.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CC029391F02B7F3008B5063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C1B0F2F1EFCBBA1003BE2D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C1B0F361EFCBBA1003BE2D9;
+			remoteInfo = octrace;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1C1B0F351EFCBBA1003BE2D9 /* CopyFiles */ = {
@@ -49,6 +67,20 @@
 		1C1B0F511EFCF721003BE2D9 /* OCTraceRemoteLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceRemoteLogger.h; sourceTree = "<group>"; };
 		1C1B0F521EFCF721003BE2D9 /* OCTraceUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OCTraceUtils.cpp; sourceTree = "<group>"; };
 		1C1B0F531EFCF721003BE2D9 /* OCTraceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceUtils.h; sourceTree = "<group>"; };
+		1CC029141F02B7E8008B5063 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CC029171F02B7E8008B5063 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CC029191F02B7E8008B5063 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1CC0291A1F02B7E8008B5063 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		1CC0291C1F02B7E8008B5063 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1CC0291D1F02B7E8008B5063 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		1CC029201F02B7E8008B5063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CC029221F02B7E8008B5063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CC029251F02B7E8008B5063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CC029271F02B7E8008B5063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC029301F02B7E8008B5063 /* demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoUITests.m; sourceTree = "<group>"; };
+		1CC029321F02B7E8008B5063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CC029421F034863008B5063 /* OCTraceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceTest.h; sourceTree = "<group>"; };
+		1CC029431F034863008B5063 /* OCTraceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCTraceTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +91,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CC029111F02B7E8008B5063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC0293B1F02B7F9008B5063 /* liboctrace.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				1C1B0F391EFCBBA1003BE2D9 /* octrace */,
+				1CC029151F02B7E8008B5063 /* demo */,
+				1CC0292F1F02B7E8008B5063 /* demoUITests */,
 				1C1B0F381EFCBBA1003BE2D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				1C1B0F371EFCBBA1003BE2D9 /* liboctrace.a */,
+				1CC029141F02B7E8008B5063 /* demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +159,41 @@
 			path = objctrace;
 			sourceTree = "<group>";
 		};
+		1CC029151F02B7E8008B5063 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				1CC029421F034863008B5063 /* OCTraceTest.h */,
+				1CC029431F034863008B5063 /* OCTraceTest.m */,
+				1CC029191F02B7E8008B5063 /* AppDelegate.h */,
+				1CC0291A1F02B7E8008B5063 /* AppDelegate.mm */,
+				1CC0291C1F02B7E8008B5063 /* ViewController.h */,
+				1CC0291D1F02B7E8008B5063 /* ViewController.mm */,
+				1CC0291F1F02B7E8008B5063 /* Main.storyboard */,
+				1CC029221F02B7E8008B5063 /* Assets.xcassets */,
+				1CC029241F02B7E8008B5063 /* LaunchScreen.storyboard */,
+				1CC029271F02B7E8008B5063 /* Info.plist */,
+				1CC029161F02B7E8008B5063 /* Supporting Files */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		1CC029161F02B7E8008B5063 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CC029171F02B7E8008B5063 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CC0292F1F02B7E8008B5063 /* demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CC029301F02B7E8008B5063 /* demoUITests.m */,
+				1CC029321F02B7E8008B5063 /* Info.plist */,
+			);
+			path = demoUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,6 +214,24 @@
 			productReference = 1C1B0F371EFCBBA1003BE2D9 /* liboctrace.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1CC029131F02B7E8008B5063 /* demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CC029371F02B7E8008B5063 /* Build configuration list for PBXNativeTarget "demo" */;
+			buildPhases = (
+				1CC029101F02B7E8008B5063 /* Sources */,
+				1CC029111F02B7E8008B5063 /* Frameworks */,
+				1CC029121F02B7E8008B5063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CC0293A1F02B7F3008B5063 /* PBXTargetDependency */,
+			);
+			name = demo;
+			productName = demo;
+			productReference = 1CC029141F02B7E8008B5063 /* demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +246,11 @@
 						DevelopmentTeam = S6NQ524Y5V;
 						ProvisioningStyle = Automatic;
 					};
+					1CC029131F02B7E8008B5063 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = S6NQ524Y5V;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1C1B0F321EFCBBA1003BE2D9 /* Build configuration list for PBXProject "octrace" */;
@@ -158,6 +259,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1C1B0F2E1EFCBBA1003BE2D9;
 			productRefGroup = 1C1B0F381EFCBBA1003BE2D9 /* Products */;
@@ -165,9 +267,23 @@
 			projectRoot = "";
 			targets = (
 				1C1B0F361EFCBBA1003BE2D9 /* octrace */,
+				1CC029131F02B7E8008B5063 /* demo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CC029121F02B7E8008B5063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC029261F02B7E8008B5063 /* LaunchScreen.storyboard in Resources */,
+				1CC029231F02B7E8008B5063 /* Assets.xcassets in Resources */,
+				1CC029211F02B7E8008B5063 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C1B0F331EFCBBA1003BE2D9 /* Sources */ = {
@@ -184,7 +300,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1CC029101F02B7E8008B5063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CC0291E1F02B7E8008B5063 /* ViewController.mm in Sources */,
+				1CC029441F034863008B5063 /* OCTraceTest.m in Sources */,
+				1CC0291B1F02B7E8008B5063 /* AppDelegate.mm in Sources */,
+				1CC029181F02B7E8008B5063 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CC0293A1F02B7F3008B5063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C1B0F361EFCBBA1003BE2D9 /* octrace */;
+			targetProxy = 1CC029391F02B7F3008B5063 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CC0291F1F02B7E8008B5063 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC029201F02B7E8008B5063 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CC029241F02B7E8008B5063 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CC029251F02B7E8008B5063 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1C1B0F3E1EFCBBA1003BE2D9 /* Debug */ = {
@@ -297,6 +451,30 @@
 			};
 			name = Release;
 		};
+		1CC029331F02B7E8008B5063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S6NQ524Y5V;
+				INFOPLIST_FILE = demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wadahana.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CC029341F02B7E8008B5063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S6NQ524Y5V;
+				INFOPLIST_FILE = demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wadahana.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -314,6 +492,15 @@
 			buildConfigurations = (
 				1C1B0F411EFCBBA1003BE2D9 /* Debug */,
 				1C1B0F421EFCBBA1003BE2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CC029371F02B7E8008B5063 /* Build configuration list for PBXNativeTarget "demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CC029331F02B7E8008B5063 /* Debug */,
+				1CC029341F02B7E8008B5063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property(nonatomic, weak) IBOutlet UILabel * label;
+
+-(IBAction)onButton:(UIButton *)button;
 
 @end
 

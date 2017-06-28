@@ -16,6 +16,29 @@ OCTraceLogger::~OCTraceLogger() {
     pthread_mutex_destroy(&this->m_map_mutex);
 }
 
+const char * OCTraceLogger::getClassName(intptr_t obj_ptr) {
+    const char* class_name = (char*) object_getClassName((id)obj_ptr);
+    if (!class_name) {
+        class_name = "null";
+    }
+    return class_name;
+};
+const char * OCTraceLogger::getSelectorName(intptr_t op_ptr) {
+    const char* op_name = (const char*) op_ptr;
+    op_name = !op_name ? "null" : op_name;
+    return op_name;
+};
+__uint64_t OCTraceLogger::getCurrentThreadID() {
+    __uint64_t threadId = 0;
+    if (pthread_threadid_np(0, &threadId)) {
+        threadId = pthread_mach_thread_np(pthread_self());
+    }
+    return threadId;
+};
+__uint64_t OCTraceLogger::getProcessID() {
+    return (__uint64_t)getpid();
+};
+
 OCTraceLoggerCallee OCTraceLogger::makeCallee(intptr_t obj_ptr, intptr_t op_ptr) {
     OCTraceLoggerCallee callee;
     callee.m_obj_ptr = obj_ptr;
