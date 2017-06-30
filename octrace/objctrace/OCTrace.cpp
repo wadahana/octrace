@@ -96,8 +96,12 @@ extern "C"
 void * __hook_callback_pre(id self, SEL op, intptr_t arg0, intptr_t arg1) {
     const char* class_name = (char*) object_getClassName( self );
     Class clazz = objc_lookUpClass(class_name);
+    IMP imp = method_getImplementation(class_getInstanceMethod(clazz, op));
+    if (!imp) {
+        imp = method_getImplementation(class_getClassMethod(clazz, op));
+    }
     
-    if (!__skip_image_addr((intptr_t)clazz) && !__skip_class_name(class_name)) {
+    if (!__skip_image_addr((intptr_t)imp) && !__skip_class_name(class_name)) {
 #if 0
         const char* op_name = (const char*) op;
         op_name = !op_name ? "null" : op_name;
@@ -251,8 +255,8 @@ int OCTraceInit(OCTraceLogger * logger) {
     }
     
 #endif
-    //s_logger = new OCTraceLocalLogger();
-    s_logger = logger ;//new OCTraceRemoteLogger();
+    s_logger = new OCTraceLocalLogger();
+    //s_logger = logger ;//new OCTraceRemoteLogger();
     
     s_origin_objc_msgSend = (fn_objc_msgSend)dlsym(RTLD_DEFAULT, "objc_msgSend");
     return rebind_symbols((struct rebinding[1]){{"objc_msgSend", (void *)new_objc_msgSend}}, 1);
