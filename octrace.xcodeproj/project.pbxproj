@@ -10,12 +10,12 @@
 		1C1B0F541EFCF721003BE2D9 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B0F441EFCF721003BE2D9 /* fishhook.c */; };
 		1C1B0F551EFCF721003BE2D9 /* OCTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B0F481EFCF721003BE2D9 /* OCTrace.cpp */; };
 		1C1B0F561EFCF721003BE2D9 /* OCTraceImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B0F4A1EFCF721003BE2D9 /* OCTraceImage.cpp */; };
-		1C1B0F571EFCF721003BE2D9 /* OCTraceLocalLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B0F4C1EFCF721003BE2D9 /* OCTraceLocalLogger.cpp */; };
 		1C1B0F581EFCF721003BE2D9 /* OCTraceLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B0F4E1EFCF721003BE2D9 /* OCTraceLogger.cpp */; };
-		1C1B0F591EFCF721003BE2D9 /* OCTraceRemoteLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B0F501EFCF721003BE2D9 /* OCTraceRemoteLogger.cpp */; };
 		1C1B0F5A1EFCF721003BE2D9 /* OCTraceUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B0F521EFCF721003BE2D9 /* OCTraceUtils.cpp */; };
 		1C1B0F5B1EFCF81A003BE2D9 /* OCTrace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1B0F491EFCF721003BE2D9 /* OCTrace.h */; };
 		1C1B0F5C1EFCF81A003BE2D9 /* OCTraceLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1B0F4F1EFCF721003BE2D9 /* OCTraceLogger.h */; };
+		1CAAD1421F0F2E7400EB5EE2 /* OCTraceLocalLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CAAD13E1F0F2E7400EB5EE2 /* OCTraceLocalLogger.cpp */; };
+		1CAAD1431F0F2E7400EB5EE2 /* OCTraceRemoteLogger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CAAD1401F0F2E7400EB5EE2 /* OCTraceRemoteLogger.cpp */; };
 		1CC029181F02B7E8008B5063 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CC029171F02B7E8008B5063 /* main.m */; };
 		1CC0291B1F02B7E8008B5063 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0291A1F02B7E8008B5063 /* AppDelegate.mm */; };
 		1CC0291E1F02B7E8008B5063 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1CC0291D1F02B7E8008B5063 /* ViewController.mm */; };
@@ -59,14 +59,14 @@
 		1C1B0F491EFCF721003BE2D9 /* OCTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTrace.h; sourceTree = "<group>"; };
 		1C1B0F4A1EFCF721003BE2D9 /* OCTraceImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OCTraceImage.cpp; sourceTree = "<group>"; };
 		1C1B0F4B1EFCF721003BE2D9 /* OCTraceImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceImage.h; sourceTree = "<group>"; };
-		1C1B0F4C1EFCF721003BE2D9 /* OCTraceLocalLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OCTraceLocalLogger.cpp; sourceTree = "<group>"; };
-		1C1B0F4D1EFCF721003BE2D9 /* OCTraceLocalLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceLocalLogger.h; sourceTree = "<group>"; };
 		1C1B0F4E1EFCF721003BE2D9 /* OCTraceLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OCTraceLogger.cpp; sourceTree = "<group>"; };
 		1C1B0F4F1EFCF721003BE2D9 /* OCTraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceLogger.h; sourceTree = "<group>"; };
-		1C1B0F501EFCF721003BE2D9 /* OCTraceRemoteLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OCTraceRemoteLogger.cpp; sourceTree = "<group>"; };
-		1C1B0F511EFCF721003BE2D9 /* OCTraceRemoteLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceRemoteLogger.h; sourceTree = "<group>"; };
 		1C1B0F521EFCF721003BE2D9 /* OCTraceUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OCTraceUtils.cpp; sourceTree = "<group>"; };
 		1C1B0F531EFCF721003BE2D9 /* OCTraceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceUtils.h; sourceTree = "<group>"; };
+		1CAAD13E1F0F2E7400EB5EE2 /* OCTraceLocalLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OCTraceLocalLogger.cpp; sourceTree = "<group>"; };
+		1CAAD13F1F0F2E7400EB5EE2 /* OCTraceLocalLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceLocalLogger.h; sourceTree = "<group>"; };
+		1CAAD1401F0F2E7400EB5EE2 /* OCTraceRemoteLogger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OCTraceRemoteLogger.cpp; sourceTree = "<group>"; };
+		1CAAD1411F0F2E7400EB5EE2 /* OCTraceRemoteLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTraceRemoteLogger.h; sourceTree = "<group>"; };
 		1CC029141F02B7E8008B5063 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC029171F02B7E8008B5063 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1CC029191F02B7E8008B5063 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,12 +147,8 @@
 				1C1B0F491EFCF721003BE2D9 /* OCTrace.h */,
 				1C1B0F4A1EFCF721003BE2D9 /* OCTraceImage.cpp */,
 				1C1B0F4B1EFCF721003BE2D9 /* OCTraceImage.h */,
-				1C1B0F4C1EFCF721003BE2D9 /* OCTraceLocalLogger.cpp */,
-				1C1B0F4D1EFCF721003BE2D9 /* OCTraceLocalLogger.h */,
 				1C1B0F4E1EFCF721003BE2D9 /* OCTraceLogger.cpp */,
 				1C1B0F4F1EFCF721003BE2D9 /* OCTraceLogger.h */,
-				1C1B0F501EFCF721003BE2D9 /* OCTraceRemoteLogger.cpp */,
-				1C1B0F511EFCF721003BE2D9 /* OCTraceRemoteLogger.h */,
 				1C1B0F521EFCF721003BE2D9 /* OCTraceUtils.cpp */,
 				1C1B0F531EFCF721003BE2D9 /* OCTraceUtils.h */,
 			);
@@ -162,6 +158,10 @@
 		1CC029151F02B7E8008B5063 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				1CAAD13E1F0F2E7400EB5EE2 /* OCTraceLocalLogger.cpp */,
+				1CAAD13F1F0F2E7400EB5EE2 /* OCTraceLocalLogger.h */,
+				1CAAD1401F0F2E7400EB5EE2 /* OCTraceRemoteLogger.cpp */,
+				1CAAD1411F0F2E7400EB5EE2 /* OCTraceRemoteLogger.h */,
 				1CC029421F034863008B5063 /* OCTraceTest.h */,
 				1CC029431F034863008B5063 /* OCTraceTest.m */,
 				1CC029191F02B7E8008B5063 /* AppDelegate.h */,
@@ -295,8 +295,6 @@
 				1C1B0F5A1EFCF721003BE2D9 /* OCTraceUtils.cpp in Sources */,
 				1C1B0F581EFCF721003BE2D9 /* OCTraceLogger.cpp in Sources */,
 				1C1B0F561EFCF721003BE2D9 /* OCTraceImage.cpp in Sources */,
-				1C1B0F571EFCF721003BE2D9 /* OCTraceLocalLogger.cpp in Sources */,
-				1C1B0F591EFCF721003BE2D9 /* OCTraceRemoteLogger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,10 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CAAD1421F0F2E7400EB5EE2 /* OCTraceLocalLogger.cpp in Sources */,
 				1CC0291E1F02B7E8008B5063 /* ViewController.mm in Sources */,
 				1CC029441F034863008B5063 /* OCTraceTest.m in Sources */,
 				1CC0291B1F02B7E8008B5063 /* AppDelegate.mm in Sources */,
 				1CC029181F02B7E8008B5063 /* main.m in Sources */,
+				1CAAD1431F0F2E7400EB5EE2 /* OCTraceRemoteLogger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +503,7 @@
 				1CC029341F02B7E8008B5063 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

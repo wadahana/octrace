@@ -255,8 +255,7 @@ int OCTraceInit(OCTraceLogger * logger) {
     }
     
 #endif
-    s_logger = new OCTraceLocalLogger();
-    //s_logger = logger ;//new OCTraceRemoteLogger();
+    s_logger = logger;
     
     s_origin_objc_msgSend = (fn_objc_msgSend)dlsym(RTLD_DEFAULT, "objc_msgSend");
     return rebind_symbols((struct rebinding[1]){{"objc_msgSend", (void *)new_objc_msgSend}}, 1);
